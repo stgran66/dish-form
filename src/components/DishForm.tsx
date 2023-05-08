@@ -106,7 +106,7 @@ export const DishForm: React.FC<DishFormProps> = ({ onDishTypeSelect }) => {
           render={({ field: { onChange, value } }) => (
             <TimeInput
               onChange={onChange}
-              mask='x'
+              mask={['h', 'h', 'm', 'm', 's', 's']}
               customInput={PreparationTimeInput}
               value={value}
             />
