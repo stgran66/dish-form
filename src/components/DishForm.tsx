@@ -63,6 +63,7 @@ export const DishForm: React.FC<DishFormProps> = ({ onDishTypeSelect }) => {
       setErrorMessage(null);
       await axios.post('/', data);
       reset();
+      onDishTypeSelect('');
       Notify.success(`We successfully received your form `);
     } catch (error) {
       Notify.failure(`Oops... Something went wrong `);
