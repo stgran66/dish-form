@@ -35,6 +35,11 @@ interface ResponseErrors {
   slices_of_bread: string[];
 }
 
+// setting up axios base url from env
+axios.defaults.baseURL =
+  process.env.REACT_APP_BASE_URL ||
+  ' https://umzzcc503l.execute-api.us-west-2.amazonaws.com/dishes/';
+
 export const DishForm: React.FC<DishFormProps> = ({ onDishTypeSelect }) => {
   // State for handling errors from backend
   const [errorMessage, setErrorMessage] = useState<null | ResponseErrors>(null);
@@ -56,10 +61,7 @@ export const DishForm: React.FC<DishFormProps> = ({ onDishTypeSelect }) => {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     try {
       setErrorMessage(null);
-      await axios.post(
-        'https://umzzcc503l.execute-api.us-west-2.amazonaws.com/dishes/',
-        data
-      );
+      await axios.post('/', data);
       reset();
       Notify.success(`We successfully received your form `);
     } catch (error) {
