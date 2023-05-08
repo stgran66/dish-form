@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/dish-form/static/css/main.8a685450.css",
-    "main.js": "/dish-form/static/js/main.2a005ab8.js",
+    "main.js": "/dish-form/static/js/main.1050f333.js",
     "static/media/default-bg.jpg": "/dish-form/static/media/default-bg.23c136547c6e9e76b688.jpg",
     "static/media/pizza-bg.jpg": "/dish-form/static/media/pizza-bg.b5e6b6632caa94298770.jpg",
     "static/media/soup-bg.jpg": "/dish-form/static/media/soup-bg.1e4488c2730ef18353d6.jpg",
     "static/media/sandwich-bg.jpg": "/dish-form/static/media/sandwich-bg.646731ed728feca066ac.jpg",
     "index.html": "/dish-form/index.html",
     "main.8a685450.css.map": "/dish-form/static/css/main.8a685450.css.map",
-    "main.2a005ab8.js.map": "/dish-form/static/js/main.2a005ab8.js.map"
+    "main.1050f333.js.map": "/dish-form/static/js/main.1050f333.js.map"
   },
   "entrypoints": [
     "static/css/main.8a685450.css",
-    "static/js/main.2a005ab8.js"
+    "static/js/main.1050f333.js"
   ]
 }
